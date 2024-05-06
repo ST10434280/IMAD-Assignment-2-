@@ -22,7 +22,7 @@ class MainActivity2 : AppCompatActivity() {
         val progHun = findViewById<ProgressBar>(R.id.progHun)                                       //IIE, 2024
         val progClean = findViewById<ProgressBar>(R.id.progClean)                                   //IIE, 2024
         val progHap = findViewById<ProgressBar>(R.id.progHap)                                       //IIE, 2024
-
+        // making the clean and hunger bars start at 100
         progClean.incrementProgressBy(100)                                                      //(Progress Bar in Android Studio - Master Coding, 2023)
         progHun.incrementProgressBy(100)                                                        //(Progress Bar in Android Studio - Master Coding, 2023)
 
@@ -32,6 +32,7 @@ class MainActivity2 : AppCompatActivity() {
             progHun.incrementProgressBy(20)                                                     //(Progress Bar in Android Studio - Master Coding, 2023)
             progHap.incrementProgressBy(10)                                                     //(Progress Bar in Android Studio - Master Coding, 2023)
             progClean.incrementProgressBy(-10)                                                  //(Progress Bar in Android Studio - Master Coding, 2023)
+           // making the action image only show for 4 second before going back
             Handler().postDelayed({                                                                 //( OpenAI, 2024) line 35 - 40
                 image.setImageResource(R.drawable.ax_welcome)
             }, 4000)
